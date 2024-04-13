@@ -3,9 +3,10 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: arial;
   margin: 20px;
   padding: 0;
+  background-color: #e3fafc
 }
 
 h1 {
@@ -42,10 +43,23 @@ code {
   font-size: 1.2em;
 }
 
-ul {
-  padding-inline-start: 20px;
+ol{
+  padding-inline-start: 10px;
+  margin-bottom: 10px
+
 }
 
+
+
+.history {
+  font-size: 16px;
+  background-color: rgb(255, 239, 210);
+}
+
+.history.selected {
+  font-size: 20px;
+  font-weight: bold;
+}
 * {
   box-sizing: border-box;
 }
@@ -58,17 +72,17 @@ body {
 
 .square {
   background: #fff;
-  border: 1px solid #999;
+  border: 3px solid #000000;
   float: left;
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 60px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 60px;
 }
 
 .board-row:after {
@@ -78,13 +92,19 @@ body {
 }
 
 .status {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 200%;
 }
 .game {
   display: flex;
   flex-direction: row;
+  justify-content:  center;
+  align-items: center;
 }
 
 .game-info {
   margin-left: 20px;
+  display:flex;
+  flex-direction: column;
+  align-items:  flex-end;
 }
